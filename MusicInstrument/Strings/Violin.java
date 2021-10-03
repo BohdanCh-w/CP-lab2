@@ -9,4 +9,8 @@ final public class Violin extends StringsInstrument {
 
     public String stringsType() { return this.stringsType; }
     public void setStringsType(String stringsType) { this.stringsType = stringsType; }
+    public String toString() { 
+        return " " + this.getCode() + " - " + this.getProduser() + ". " + this.getPrice() + "$, " 
+        + this.getWeight() + "kg, strings - (" + this.getStringNumber() + ", type - " + this.stringsType + ")"; 
+    }
 }

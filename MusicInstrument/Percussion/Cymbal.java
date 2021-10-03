@@ -9,4 +9,8 @@ final public class Cymbal extends PercussionInstrument {
 
     public double getPitch() { return this.pitch; }
     public void setPitch(double pitch) { this.pitch = pitch; }
+    public String toString() { 
+        return " " + this.getCode() + " - " + this.getProduser() + ". " + this.getPrice() + "$, " 
+        + this.getWeight() + "kg " + ", pitch - " + this.pitch; 
+    }
 }

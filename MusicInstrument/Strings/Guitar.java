@@ -9,4 +9,9 @@ final public class Guitar extends StringsInstrument {
 
     public String getStyleType() { return this.styleType; }
     public void setStyleType(String styleType) { this.styleType = styleType; }
+    
+    public String toString() { 
+        return " " + this.getCode() + " - " + this.getProduser() + ". " + this.getPrice() + "$, " 
+        + this.getWeight() + "kg, strings - " + this.getStringNumber() + ", style - " + this.styleType; 
+    }
 }

@@ -9,4 +9,8 @@ final public class Trumpet extends BrassInstrument {
 
     public String getStyle() { return this.style; }
     public void setStyle(String style) { this.style = style; }
+    public String toString() { 
+        return " " + this.getCode() + " - " + this.getProduser() + ". " + this.getPrice() + "$, " 
+        + this.getWeight() + "kg " + (this.isKeyed() ? "keyed" : "without key") + ", style - " + this.style; 
+    }
 }

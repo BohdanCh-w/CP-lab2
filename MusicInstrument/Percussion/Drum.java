@@ -9,4 +9,8 @@ final public class Drum extends PercussionInstrument {
 
     public int getMountNumber() { return this.mountNumber; }
     public void setMountNumber(int mountNumber) { this.mountNumber = mountNumber; }
+    public String toString() { 
+        return " " + this.getCode() + " - " + this.getProduser() + ". " + this.getPrice() + "$, " 
+        + this.getWeight() + "kg " + ", mounts - " + this.mountNumber; 
+    }
 }

@@ -9,4 +9,8 @@ final public class Horn extends BrassInstrument {
 
     public char getPitchKey() { return this.pitchKey; }
     public void setPitchKey(char pitchKey) { this.pitchKey = pitchKey; }
+    public String toString() { 
+        return " " + this.getCode() + " - " + this.getProduser() + ". " + this.getPrice() + "$, " 
+        + this.getWeight() + "kg " + (this.isKeyed() ? "keyed" : "without key") + ", pitch - " + this.pitchKey; 
+    }
 }
