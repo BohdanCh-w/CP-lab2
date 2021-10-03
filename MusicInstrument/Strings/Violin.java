@@ -2,7 +2,7 @@ package MusicInstrument.Strings;
 final public class Violin extends StringsInstrument {
     private String stringsType;
 
-    public Violin(String code, String produser, float price, float weight, int stringsNumber, String stringsType) {
+    public Violin(String code, String produser, double price, double weight, int stringsNumber, String stringsType) {
         super(code, produser, price, weight, stringsNumber);
         this.stringsType = stringsType;
     }

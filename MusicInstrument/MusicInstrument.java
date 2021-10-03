@@ -3,8 +3,8 @@ package MusicInstrument;
 public class MusicInstrument {
     private String code;
     private String produser;
-    private float price;
-    private float weight;
+    private double price;
+    private double weight;
 
     public enum instrumentType {
         BRASS,
@@ -12,7 +12,7 @@ public class MusicInstrument {
         STRINGS
     }
 
-    public MusicInstrument(String code, String produser, float price, float weight) {
+    public MusicInstrument(String code, String produser, double price, double weight) {
         this.code = code;
         this.produser = produser;
         this.price = price;
@@ -25,9 +25,9 @@ public class MusicInstrument {
     public String getProduser() { return this.produser; }
     public void setProduser(String produser) { this.produser = produser; }
 
-    public float getPrice() { return this.price; }
-    public void setPrice(float price) { this.price = price; }
+    public double getPrice() { return this.price; }
+    public void setPrice(double price) { this.price = price; }
 
-    public float getWeight() { return this.weight; }
-    public void setWeight(float weight) { this.weight = weight; }
+    public double getWeight() { return this.weight; }
+    public void setWeight(double weight) { this.weight = weight; }
 }

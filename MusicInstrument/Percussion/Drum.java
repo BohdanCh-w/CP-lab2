@@ -2,7 +2,7 @@ package MusicInstrument.Percussion;
 final public class Drum extends PercussionInstrument {
     private int mountNumber;
 
-    public Drum(String code, String produser, float price, float weight, int mountNumber) {
+    public Drum(String code, String produser, double price, double weight, int mountNumber) {
         super(code, produser, price, weight);
         this.mountNumber = mountNumber;
     }

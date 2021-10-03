@@ -104,7 +104,7 @@ public class MusicShopManager {
         copy.sort(new Comparator<>() {
             @Override
             public int compare(MusicInstrument a, MusicInstrument b) {
-                int res = Float.compare(a.getPrice(), b.getPrice());
+                int res = Double.compare(a.getPrice(), b.getPrice());
                 return reverse ? -res : res;
             }
         });
@@ -114,7 +114,7 @@ public class MusicShopManager {
     public ArrayList<MusicInstrument> sortByWeight(ArrayList<MusicInstrument> list, boolean reverse) {
         ArrayList<MusicInstrument> copy = new ArrayList<MusicInstrument>(list);
         copy.sort((a, b) -> {
-            int res = Float.compare(a.getWeight(), b.getWeight());
+            int res = Double.compare(a.getWeight(), b.getWeight());
             return reverse ? -res : res;
         });
         return copy;

@@ -4,7 +4,7 @@ import MusicInstrument.MusicInstrument;
 public class StringsInstrument extends MusicInstrument {
     private int stringsNumber;
 
-    public StringsInstrument(String code, String produser, float price, float weight, int stringsNumber) {
+    public StringsInstrument(String code, String produser, double price, double weight, int stringsNumber) {
         super(code, produser, price, weight);
         this.stringsNumber = stringsNumber;
     }
