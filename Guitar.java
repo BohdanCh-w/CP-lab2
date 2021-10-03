@@ -1,8 +1,8 @@
 final public class Guitar extends StringsInstrument {
     private String styleType;
 
-    public Guitar(String code, String produser, float price, int stringsNumber, String styleType) {
-        super(code, produser, price, stringsNumber);
+    public Guitar(String code, String produser, float price, float weight, int stringsNumber, String styleType) {
+        super(code, produser, price, weight, stringsNumber);
         this.styleType = styleType;
     }
 

@@ -1,5 +1,5 @@
 public class PercussionInstrument extends MusicInstrument {
-    public PercussionInstrument(String code, String produser, float price) {
-        super(code, produser, price);
+    public PercussionInstrument(String code, String produser, float price, float weight) {
+        super(code, produser, price, weight);
     }
 }

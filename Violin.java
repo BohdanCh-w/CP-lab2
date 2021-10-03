@@ -1,8 +1,8 @@
 final public class Violin extends StringsInstrument {
     private String stringsType;
 
-    public Violin(String code, String produser, float price, int stringsNumber, String stringsType) {
-        super(code, produser, price, stringsNumber);
+    public Violin(String code, String produser, float price, float weight, int stringsNumber, String stringsType) {
+        super(code, produser, price, weight, stringsNumber);
         this.stringsType = stringsType;
     }
 
