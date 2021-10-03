@@ -1,3 +1,4 @@
+package MusicInstrument.Brass;
 final public class Horn extends BrassInstrument {
     private char pitchKey;
 
@@ -6,6 +7,6 @@ final public class Horn extends BrassInstrument {
         this.pitchKey = pitchKey;
     }
 
-    char getPitchKey() { return this.pitchKey; }
-    void setPitchKey(char pitchKey) { this.pitchKey = pitchKey; }
+    public char getPitchKey() { return this.pitchKey; }
+    public void setPitchKey(char pitchKey) { this.pitchKey = pitchKey; }
 }

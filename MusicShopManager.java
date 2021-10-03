@@ -1,11 +1,21 @@
 import java.util.ArrayList;
 import java.util.Comparator;
+
+import MusicInstrument.MusicInstrument;
+import MusicInstrument.Brass.BrassInstrument;
+import MusicInstrument.Brass.Trumpet;
+import MusicInstrument.Percussion.Drum;
+import MusicInstrument.Percussion.PercussionInstrument;
+import MusicInstrument.Strings.Guitar;
+import MusicInstrument.Strings.StringsInstrument;
+
 import java.util.Arrays;
 import java.util.Collections;
 
+
 public class MusicShopManager {
 
-    
+
     public ArrayList<MusicInstrument> findMusicInstrumentByType(ArrayList<MusicInstrument> instruments, MusicInstrument.instrumentType type) {
         ArrayList<MusicInstrument> ret = new ArrayList<MusicInstrument>();
         for (MusicInstrument instrument : instruments) {

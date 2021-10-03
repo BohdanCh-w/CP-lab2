@@ -1,3 +1,4 @@
+package MusicInstrument.Brass;
 final public class Trumpet extends BrassInstrument {
     private String style;
 
@@ -6,6 +7,6 @@ final public class Trumpet extends BrassInstrument {
         this.style = style;
     }
 
-    String getStyle() { return this.style; }
-    void setStyle(String style) { this.style = style; }
+    public String getStyle() { return this.style; }
+    public void setStyle(String style) { this.style = style; }
 }

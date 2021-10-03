@@ -1,3 +1,4 @@
+package MusicInstrument.Strings;
 final public class Guitar extends StringsInstrument {
     private String styleType;
 
@@ -6,6 +7,6 @@ final public class Guitar extends StringsInstrument {
         this.styleType = styleType;
     }
 
-    String getStyleType() { return this.styleType; }
-    void setStyleType(String styleType) { this.styleType = styleType; }
+    public String getStyleType() { return this.styleType; }
+    public void setStyleType(String styleType) { this.styleType = styleType; }
 }

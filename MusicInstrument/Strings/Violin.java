@@ -1,3 +1,4 @@
+package MusicInstrument.Strings;
 final public class Violin extends StringsInstrument {
     private String stringsType;
 
@@ -6,6 +7,6 @@ final public class Violin extends StringsInstrument {
         this.stringsType = stringsType;
     }
 
-    String stringsType() { return this.stringsType; }
-    void setStringsType(String stringsType) { this.stringsType = stringsType; }
+    public String stringsType() { return this.stringsType; }
+    public void setStringsType(String stringsType) { this.stringsType = stringsType; }
 }

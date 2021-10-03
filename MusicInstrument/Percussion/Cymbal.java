@@ -1,3 +1,4 @@
+package MusicInstrument.Percussion;
 final public class Cymbal extends PercussionInstrument {
     private float pitch;
 
@@ -6,6 +7,6 @@ final public class Cymbal extends PercussionInstrument {
         this.pitch = pitch;
     }
 
-    float getPitch() { return this.pitch; }
-    void setPitch(float pitch) { this.pitch = pitch; }
+    public float getPitch() { return this.pitch; }
+    public void setPitch(float pitch) { this.pitch = pitch; }
 }

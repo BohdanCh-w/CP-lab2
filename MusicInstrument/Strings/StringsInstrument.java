@@ -1,3 +1,6 @@
+package MusicInstrument.Strings;
+import MusicInstrument.MusicInstrument;
+
 public class StringsInstrument extends MusicInstrument {
     private int stringsNumber;
 
@@ -6,6 +9,6 @@ public class StringsInstrument extends MusicInstrument {
         this.stringsNumber = stringsNumber;
     }
 
-    int getStringNumber() { return this.stringsNumber; }
-    void setStringNumber(int value) { this.stringsNumber = value; }
+    public int getStringNumber() { return this.stringsNumber; }
+    public void setStringNumber(int value) { this.stringsNumber = value; }
 }

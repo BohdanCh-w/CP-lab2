@@ -1,3 +1,6 @@
+package MusicInstrument.Brass;
+import MusicInstrument.MusicInstrument;
+
 public class BrassInstrument extends MusicInstrument {
     private boolean keyed;
 
@@ -6,6 +9,6 @@ public class BrassInstrument extends MusicInstrument {
         this.keyed = keyed;
     }
 
-    boolean isKeyed() { return this.keyed; }
-    void setKeyed(boolean keyed) { this.keyed = keyed; }
+    public boolean isKeyed() { return this.keyed; }
+    public void setKeyed(boolean keyed) { this.keyed = keyed; }
 }
