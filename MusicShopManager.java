@@ -46,7 +46,7 @@ public class MusicShopManager {
     public ArrayList<MusicInstrument> FindMusicInstrumentByType(ArrayList<MusicInstrument> instruments, Class<?> cls) {
         ArrayList<MusicInstrument> ret = new ArrayList<MusicInstrument>();
         for (MusicInstrument instrument : instruments) {
-            if (instrument.getClass().isAssignableFrom(cls)) {
+            if (cls.isAssignableFrom(instrument.getClass())) {
                 ret.add(instrument);
             }
         }
