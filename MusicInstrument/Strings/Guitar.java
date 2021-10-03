@@ -14,4 +14,19 @@ final public class Guitar extends StringsInstrument {
         return " " + this.getCode() + " - " + this.getProduser() + ". " + this.getPrice() + "$, " 
         + this.getWeight() + "kg, strings - " + this.getStringNumber() + ", style - " + this.styleType; 
     }
+
+    @Override
+    public boolean equals(Object o) {
+        if (o == this)
+            return true;
+        if (!(o instanceof Guitar))
+            return false;
+        Guitar other = (Guitar) o;
+        return this.getCode() == other.getCode() &&
+            this.getProduser() == other.getProduser() &&
+            this.getPrice() == other.getPrice() &&
+            this.getWeight() == other.getWeight() &&
+            this.getStringNumber() == other.getStringNumber() &&
+            this.getStyleType() == other.getStyleType();
+    }
 }
